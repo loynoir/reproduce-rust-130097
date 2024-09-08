@@ -1,0 +1,14 @@
+diff --git a/crates/bar_util/src/lib.rs b/crates/bar_util/src/lib.rs
+index 3ad8591..8238d18 100644
+--- a/crates/bar_util/src/lib.rs
++++ b/crates/bar_util/src/lib.rs
+@@ -4,9 +4,6 @@ mod bar {
+     pub struct Bar<T>(T);
+ 
+     impl Bar<i32> {
+-        /// # Safety
+-        ///
+-        /// be careful
+         pub const unsafe fn from_unchecked(value: i32) -> Self {
+             Bar(value)
+         }
